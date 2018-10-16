@@ -31,6 +31,12 @@ export default {
 </script>
 
 <style lang="less">
+#app>section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

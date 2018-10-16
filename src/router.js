@@ -1,13 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import test from './components/test.vue'
-
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/foo', component: test },
-  { path: '/bar', component: test }
+  {
+    path: '/',
+    redirect: '/apps'
+  },
+  {
+    path: '/apps',
+    component: resolve => require(['@/components/main.vue'], resolve)
+  }
 ]
 
 export default new VueRouter({
