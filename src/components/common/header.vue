@@ -1,7 +1,7 @@
 <template>
-    <el-footer>
-        123
-    </el-footer>
+    <el-header>
+      头
+    </el-header>
 </template>
 
 <script>
